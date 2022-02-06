@@ -1,6 +1,6 @@
-#Add all the certificates obtained
+# Add all the certificates obtained
 
-*Sololearn
-*Cisco NDG Linux
-*Screenshot of Github Learning
-*Screenshot HackerEarth Points
+* Sololearn
+* Cisco NDG Linux
+* Screenshot of Github Learning
+* Screenshot HackerEarth Points
