@@ -1,6 +1,6 @@
-# Add all the certificates obtained
+# Add all the certificates obtained </br>
 
-* Sololearn
-* Cisco NDG Linux
-* Screenshot of Github Learning
-* Screenshot HackerEarth Points
+:pushpin: Sololearn
+:pushpin: Cisco NDG Linux
+:pushpin: Screenshot of Github Learning
+:pushpin: Screenshot HackerEarth Points
