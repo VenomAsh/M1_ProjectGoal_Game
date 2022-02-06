@@ -1,5 +1,5 @@
-# M1_Project_Utility
-* Repository for creating an application
+# M1_Project_Utility </br>
+:pushpin: Repository for creating an application
 
 ## Milestone -1
 
