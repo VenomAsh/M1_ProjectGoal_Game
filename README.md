@@ -1,5 +1,6 @@
-# M1_Project_Utility </br>
-:pushpin: Repository for creating an application
+# M1_TicTacToe_Game </br>
+:pushpin: Repository for creating a game called TicTacToe.</br>
+ player[:x:]  **VS**  player[:o:]
 
 ## Milestone -1
 
