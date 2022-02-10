@@ -4,6 +4,11 @@
 
 **:round_pushpin: Structural:**
 
+* Basic Layout:
+
+  ![layout](https://user-images.githubusercontent.com/98833151/153511942-f6dca797-1c4d-417a-be08-04928610a29f.png)
+
+
 **:round_pushpin: Behavioural:**
 
 * USECASE Diagram:
