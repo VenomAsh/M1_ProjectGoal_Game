@@ -12,3 +12,15 @@ The object of Tic Tac Toe is to get three in a row. You play on a three by three
 ## Low Level Requirements
 * Player has to mark inside the box itself.
 
+## 4W's & 1H
+### Who
+:point_right: Anyone who wants to play the game.
+
+### What
+:point_right: This game is for fun purpose.
+
+### When
+:point_right: Anytime when user wants to play.
+
+### Where
+:point_right: Can be played anywhere.
