@@ -1,6 +1,7 @@
 # Architecture
 
 ## Design
-* Structural
-* Behavioural
-* Flowcharts
+### Structural
+### Behavioural
+### Flowchart
+![Flowchart](flowchart tictactoe.jpg)
