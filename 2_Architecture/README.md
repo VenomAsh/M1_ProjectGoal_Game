@@ -13,7 +13,8 @@
 
 * USECASE Diagram:
  
-![usecase diagram](https://user-images.githubusercontent.com/98833151/153509196-fe946075-0355-41d6-b3e1-d084de61f88a.png)
+<img width="380" alt="Usecase_flowchart" src="https://user-images.githubusercontent.com/98833151/153588722-ddf54689-aed3-4945-adb7-c347d7e187f1.png">
+
 
 * Flowchart:
 
