@@ -7,9 +7,19 @@
 * Basic Layout:
 
   ![layout](https://user-images.githubusercontent.com/98833151/153511942-f6dca797-1c4d-417a-be08-04928610a29f.png)
+  
+  
+* Structural Diagram:
+
+  ![Structural](https://user-images.githubusercontent.com/98833151/153589410-2b9b1991-f554-434c-a9d5-9277ca4e6ad9.png)
 
 
 **:round_pushpin: Behavioural:**
+
+* Block Diagram:
+
+  ![Behavioral](https://user-images.githubusercontent.com/98833151/153589617-2d13ab36-2ec6-4f23-b8bf-09b8ba07ad84.png)
+
 
 * USECASE Diagram:
  
