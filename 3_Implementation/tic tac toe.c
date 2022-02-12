@@ -8,6 +8,7 @@
 int board[10] = {2,2,2,2,2,2,2,2,2,2};
 int turn = 1,flag = 0;
 int P,C;
+char name;
 void menu();
 void go(int n);
 void start();
@@ -34,6 +35,8 @@ void menu()
     int choice;
     system("cls");
     printf("\n****TicTacToe****");
+    printf("\nEnter your name: ");
+    scanf("%c", &name);
     printf("\n------------OPTIONS------------");
     printf("\n1 : Play first as X");
     printf("\n2 : Play second as O");
@@ -144,7 +147,7 @@ int winpos(int p)
     return 0;
 }
 
-//creating the tictactoe board
+//Creating the tictactoe board
 void create_xotable()
 {
     int j;
@@ -222,7 +225,7 @@ void player_1()
         go(pos);
         create_xotable();
         gotoxy(30,20);
-        printf("You win!");
+        printf("%c Wins!!", name );
         getch();
         exit(0);
     }
@@ -257,7 +260,7 @@ void start()
         player_1();
 }
 
-//if the game is draw
+//If the game is draw
 void if_draw()
 {
     if(turn > 9)
