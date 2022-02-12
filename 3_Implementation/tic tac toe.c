@@ -35,7 +35,7 @@ void menu()
     int choice;
     system("cls");
     printf("\n****TicTacToe****");
-    printf("\nEnter your name: ");
+    printf("\nEnter first letter of your name: ");
     scanf("%c", &name);
     printf("\n------------OPTIONS------------");
     printf("\n1 : Play first as X");
@@ -225,7 +225,7 @@ void player_1()
         go(pos);
         create_xotable();
         gotoxy(30,20);
-        printf("%c Wins!!", name );
+        printf("%c Wins!!",name);
         getch();
         exit(0);
     }
