@@ -10,7 +10,8 @@
 :point_right: Design </br>
 :point_right: Test plan
 
-
+# Description
+Tic-tac-toe is fun,tactic game played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces in the grid.
 
 # Requirements
 ## High Level Requirements</br>
