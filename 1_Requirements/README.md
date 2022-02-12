@@ -28,6 +28,11 @@ The object of Tic Tac Toe is to get three in a row. You play on a three by three
 |LR07|If the user gets 3 Xs or 3 Os(as per his choice), in vertical,horizontal or diagonal row, he'll win.|HR05|
 |LR08|If the total number of moves, i.e., 9 moves have been completed and neithe the user nor the computer has won, it'll end up in a draw.|HR06|
 
+# SWOT Analysis:
+
+<img width="563" alt="SWOT" src="https://user-images.githubusercontent.com/98833151/153712194-4c443cc9-2a43-4ec2-8b0d-8e2815cbc976.png">
+
+
 ## 4W's & 1H
 ### Who
 :point_right: Anyone who wants to play the game.
