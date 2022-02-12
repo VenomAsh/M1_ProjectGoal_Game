@@ -33,6 +33,7 @@ void menu()
 {
     int choice;
     system("cls");
+    printf("\n****TicTacToe****");
     printf("\n------------OPTIONS------------");
     printf("\n1 : Play first as X");
     printf("\n2 : Play second as O");
@@ -262,7 +263,7 @@ void if_draw()
     if(turn > 9)
     {
         gotoxy(30,20);
-        printf("Draw");
+        printf("It's a Draw");
         getch();
         exit(0);
     }
