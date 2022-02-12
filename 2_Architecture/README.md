@@ -11,7 +11,7 @@
   
 * Structural Diagram:
 
-  ![Structural](https://user-images.githubusercontent.com/98833151/153589410-2b9b1991-f554-434c-a9d5-9277ca4e6ad9.png)
+  <img width="394" alt="Structural Diagram" src="https://user-images.githubusercontent.com/98833151/153710438-ca2b19f6-0b9f-4f38-897e-ac63e1acb4c2.png">
 
 
 **:round_pushpin: Behavioural:**
