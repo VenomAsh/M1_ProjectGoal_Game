@@ -42,3 +42,6 @@ Tic-tac-toe is fun,tactic game played on a three-by-three grid by two players, w
 
 ### Where
 :point_right: Can be played anywhere.
+
+### How
+:point_right: By implementing the code using C-program.
