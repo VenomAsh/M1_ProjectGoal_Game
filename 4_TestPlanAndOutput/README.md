@@ -25,5 +25,10 @@ Table : Low level test plan</br>
 
 ## Output:
 
-<img width="414" alt="OUTPUT_2players" src="https://user-images.githubusercontent.com/98833151/156636975-cae7f8e6-9f4e-4e2a-8b92-1fb2ae7787d6.png">
+Player 1 wins!
 
+<img width="414" alt="OUTPUT_player1_wins" src="https://user-images.githubusercontent.com/98833151/156641079-7ce74684-bc20-4624-b5c4-1105be33cfd3.png">
+
+Player 2 wins!
+
+<img width="305" alt="OUTPUT_player2_wins" src="https://user-images.githubusercontent.com/98833151/156641117-a974601c-68bb-4e21-82b1-21b190d500c2.png">
