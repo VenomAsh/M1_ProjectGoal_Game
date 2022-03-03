@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#include <windows.h>
+#include<windows.h>
 
 int board[10] = {2,2,2,2,2,2,2,2,2,2};
 int turn = 1,flag = 0;
