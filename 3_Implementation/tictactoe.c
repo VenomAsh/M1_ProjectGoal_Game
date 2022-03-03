@@ -1,272 +1,143 @@
 //TicTacToe Game
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<windows.h>
+#include <stdio.h>
+#include <conio.h>
 
-int board[10] = {2,2,2,2,2,2,2,2,2,2};
-int turn = 1,flag = 0;
-int P,C;
-char name;
-void menu();
-void go(int n);
-void start();
-void if_draw();
-void create_xotable();
-void player_1();
-void mark_XO(char ch,int pos);
-COORD coord= {0,0}; 
+char square[10] = { 'o', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
-void gotoxy(int x,int y)
+int checkwin();
+int board();
+
+int main()
 {
-    coord.X=x;
-    coord.Y=y;
-    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coord);
-}
-void main()
-{
-    system("cls");
-    menu();
+    int player = 1, i, choice;
+
+    char mark;
+    do
+    {
+        board();
+        player = (player % 2) ? 1 : 2;
+
+        printf("   Player %d, enter a number:  ", player);
+        scanf("%d", &choice);
+
+        mark = (player == 1) ? 'X' : 'O';
+
+        if (choice == 1 && square[1] == '1')
+            square[1] = mark;
+
+        else if (choice == 2 && square[2] == '2')
+            square[2] = mark;
+
+        else if (choice == 3 && square[3] == '3')
+            square[3] = mark;
+
+        else if (choice == 4 && square[4] == '4')
+            square[4] = mark;
+
+        else if (choice == 5 && square[5] == '5')
+            square[5] = mark;
+
+        else if (choice == 6 && square[6] == '6')
+            square[6] = mark;
+
+        else if (choice == 7 && square[7] == '7')
+            square[7] = mark;
+
+        else if (choice == 8 && square[8] == '8')
+            square[8] = mark;
+
+        else if (choice == 9 && square[9] == '9')
+            square[9] = mark;
+
+        else
+        {
+            printf("   Invalid move ");
+
+            player--;
+            getch();
+        }
+        i = checkwin();
+
+        player++;
+    }while (i ==  - 1);
+
+    board();
+
+    if (i == 1)
+        printf("   ==>\aPlayer %d win ", --player);
+    else
+        printf("   ==>\aGame draw");
+
     getch();
-}
-void menu()
-{
-    int choice;
-    system("cls");
-    printf("\n****TicTacToe****");
-    printf("\nEnter first letter of your name: ");
-    scanf("%c", &name);
-    printf("\n------------OPTIONS------------");
-    printf("\n1 : Play first as X");
-    printf("\n2 : Play second as O");
-    printf("\n3 : Exit");
-    printf("\nEnter your choice: 1,2 or 3 >");
-    scanf("%d",&choice);
-    turn = 1;
-    switch (choice)
-    {
-    case 1:
-        P = 1;
-        C = 0;
-        player_1();
-        break;
-    case 2:
-        P = 0;
-        C = 1;
-        start();
-        break;
-    case 3:
-        exit(1);
-    default:
-        menu();
-    }
-}
-int make2()
-{
-    if(board[5] == 2)
-        return 5;
-    if(board[2] == 2)
-        return 2;
-    if(board[4] == 2)
-        return 4;
-    if(board[6] == 2)
-        return 6;
-    if(board[8] == 2)
-        return 8;
+
     return 0;
 }
-int make4()
+
+int checkwin()
 {
-    if(board[1] == 2)
+    if (square[1] == square[2] && square[2] == square[3])
         return 1;
-    if(board[3] == 2)
-        return 3;
-    if(board[7] == 2)
-        return 7;
-    if(board[9] == 2)
-        return 9;
+
+    else if (square[4] == square[5] && square[5] == square[6])
+        return 1;
+
+    else if (square[7] == square[8] && square[8] == square[9])
+        return 1;
+
+    else if (square[1] == square[4] && square[4] == square[7])
+        return 1;
+
+    else if (square[2] == square[5] && square[5] == square[8])
+        return 1;
+
+    else if (square[3] == square[6] && square[6] == square[9])
+        return 1;
+
+    else if (square[1] == square[5] && square[5] == square[9])
+        return 1;
+
+    else if (square[3] == square[5] && square[5] == square[7])
+        return 1;
+
+    else if (square[1] != '1' && square[2] != '2' && square[3] != '3' &&
+        square[4] != '4' && square[5] != '5' && square[6] != '6' && square[7]
+        != '7' && square[8] != '8' && square[9] != '9')
+
+        return 0;
+    else
+        return  - 1;
+}
+
+
+//Create the Board//
+
+int board()
+{
+    system("cls");
+    printf("\n\n   \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\n");
+    printf("\t   Tic Tac Toe");
+    printf("\n   \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\n\n");
+
+    printf("   Player 1 (X)  -  Player 2 (O)\n\n");
+
+
+    printf("   \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\n");
+    printf("\t|     |     |     |\n");
+    printf("\t|  %c  |  %c  |  %c  |\n", square[1], square[2], square[3]);
+
+    printf("\t|_____|_____|_____|\n");
+    printf("\t|     |     |     |\n");
+
+    printf("\t|  %c  |  %c  |  %c  |\n", square[4], square[5], square[6]);
+
+    printf("\t|_____|_____|_____|\n");
+    printf("\t|     |     |     |\n");
+
+    printf("\t|  %c  |  %c  |  %c  |\n", square[7], square[8], square[9]);
+
+    printf("\t|     |     |     |\n");
+    printf("   \xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\xcd\n\n");
+
     return 0;
-}
-int winpos(int p)
-{
-// p==1 then X   p==0  then  O
-    int i;
-    int check_val,pos;
-
-    if(p == 1)
-        check_val = 18;
-    else
-        check_val = 50;
-    i = 1;
-    while(i<=9) //check the row
-    {
-        if(board[i] * board[i+1] * board[i+2] == check_val)
-        {
-            if(board[i] == 2)
-                return i;
-            if(board[i+1] == 2)
-                return i+1;
-            if(board[i+2] == 2)
-                return i+2;
-        }
-        i+=3;
-    }
-    i = 1;
-    while(i<=3) //check the column
-    {
-        if(board[i] * board[i+3] * board[i+6] == check_val)
-        {
-            if(board[i] == 2)
-                return i;
-            if(board[i+3] == 2)
-                return i+3;
-            if(board[i+6] == 2)
-                return i+6;
-        }
-        i++;
-    }
-    if(board[1] * board[5] * board[9] == check_val)
-    {
-        if(board[1] == 2)
-            return 1;
-        if(board[5] == 2)
-            return 5;
-        if(board[9] == 2)
-            return 9;
-    }
-    if(board[3] * board[5] * board[7] == check_val)
-    {
-        if(board[3] == 2)
-            return 3;
-        if(board[5] == 2)
-            return 5;
-        if(board[7] == 2)
-            return 7;
-    }
-    return 0;
-}
-
-//Creating the tictactoe board
-void create_xotable()
-{
-    int j;
-
-    for(j=9; j<17; j++)
-    {
-        gotoxy(35,j);
-        printf("|       |");
-    }
-    gotoxy(28,11);
-    printf("-----------------------");
-    gotoxy(28,14);
-    printf("-----------------------");
-    for(j=1; j<10; j++)
-    {
-        if(board[j] == 3)
-            mark_XO('X',j);
-        else if(board[j] == 5)
-            mark_XO('O',j);
-    }
-}
-
-void mark_XO(char ch,int pos)
-{
-    int m;
-    int x = 31, y = 10;
-    m = pos;
-    if(m > 3)
-    {
-        while(m > 3)
-        {
-            y += 3;
-            m -= 3;
-        }
-    }
-    if(pos % 3 == 0)
-        x += 16;
-    else
-    {
-        pos %= 3;
-        pos--;
-        while(pos)
-        {
-            x+=8;
-            pos--;
-        }
-    }
-    gotoxy(x,y);
-    printf("%c",ch);
-}
-
-void go(int n)
-{
-    if(turn % 2)
-        board[n] = 3;
-    else
-        board[n] = 5;
-    turn++;
-}
-
-void player_1()
-{
-    int pos;
-    if_draw();
-    create_xotable();
-    gotoxy(30,18);
-    printf("Your Turn :> ");
-    scanf("%d",&pos);
-
-    if(board[pos] != 2)
-        player_1();
-
-    if(pos == winpos(P))
-    {
-        go(pos);
-        create_xotable();
-        gotoxy(30,20);
-        printf("%c Wins!!",name);
-        getch();
-        exit(0);
-    }
-    go(pos);
-    create_xotable();
-    start();
-}
-
-void start()
-{
-// p==1 then X   p==0  then  O
-    if(winpos(C))
-    {
-        go(winpos(C));
-        flag = 1;
-    }
-    else if(winpos(P))
-        go(winpos(P));
-    else if(make2())
-        go(make2());
-    else
-        go(make4());
-    create_xotable();
-
-    if(flag)
-    {
-        gotoxy(30,20);
-        printf("Computer wins");
-        getch();
-    }
-    else
-        player_1();
-}
-
-//If the game is draw
-void if_draw()
-{
-    if(turn > 9)
-    {
-        gotoxy(30,20);
-        printf("It's a Draw");
-        getch();
-        exit(0);
-    }
 }
