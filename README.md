@@ -21,11 +21,11 @@ Tic-tac-toe is fun,tactic game played on a three-by-three grid by two players, w
 
 |ID|Description|
 |:---|:---|
-|HR01|Player shall be able to choose 'X' to play.|
-|HR02|Player shall be able to choose 'O' to play.|
+|HR01|Player1 shall be able to choose 'X' to play.|
+|HR02|Player2 shall be able to choose 'O' to play.|
 |HR03|Player shall be able to Exit the game.|
-|HR04|Player shall lose.|
-|HR05|Player shall win.|
+|HR04|Player1 shall win/lose.|
+|HR05|Player2 shall win/lose.|
 |HR06|Game shall end up in a Draw.|
 
 ## Low Level Requirements
@@ -36,9 +36,9 @@ Tic-tac-toe is fun,tactic game played on a three-by-three grid by two players, w
 |LR03|If the user presses '2', he'll be play with 'O'.|HR02|
 |LR04|If the user is playing with 'O', he'll get the second turn.|HR02|
 |LR05|If the user presses '3', it'll exit the game.|HR03|
-|LR06|If the computer gets 3 Xs or 3 Os in vertical,horizontal or diagonal row, User will lose.|HR04|
-|LR07|If the user gets 3 Xs or 3 Os(as per his choice), in vertical,horizontal or diagonal row, he'll win.|HR05|
-|LR08|If the total number of moves, i.e., 9 moves have been completed and neithe the user nor the computer has won, it'll end up in a draw.|HR06|
+|LR06|If the player1 gets 3 Xs or 3 Os in vertical,horizontal or diagonal row, User will lose.|HR04|
+|LR07|If the player2 gets 3 Xs or 3 Os(as per his choice), in vertical,horizontal or diagonal row, he'll win.|HR05|
+|LR08|If the total number of moves, i.e., 9 moves have been completed and player1 nor player2 has won, it'll end up in a draw.|HR06|
 
 # SWOT Analysis:
 
