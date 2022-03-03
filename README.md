@@ -1,3 +1,6 @@
+<a href="https://api.codiga.io/project/31278/status/svg">   <img src="https://api.codiga.io/project/31278/status/svg?style=dark" alt="codiga badge" /></a>
+<a href="https://api.codiga.io/project/31278/score/svg">   <img src="https://api.codiga.io/project/31278/score/svg?style=dark" alt="codiga badge" /></a>
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/164274b2ccd04aee9d7d12e043a788f3)](https://www.codacy.com/gh/VenomAsh/M1_TicTacToe_Game/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=VenomAsh/M1_TicTacToe_Game&amp;utm_campaign=Badge_Grade)
 # M1_TicTacToe_Game </br>
 :pushpin: Repository for creating a game called TicTacToe.</br>
  player[:x:]  **VS**  player[:o:]
