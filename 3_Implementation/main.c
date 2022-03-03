@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"tic tac toe.h"
+#include"tictactoe.h"
 int main()
 {
     int player = 1, i, choice;
