@@ -10,7 +10,7 @@ void tearDown()
 }
 void checkwin(void)
 {
-    TEST_ASSERT_EQUAL_INT(1,checkwin(1));
+    TEST_ASSERT_EQUAL_INT(1,checkwin(2));
 }
 void board(void)
 {
